@@ -25,7 +25,7 @@
             // Array of objects
             Student[] students = new Student[10];
 
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 3; i++)
             {
                 Console.WriteLine($"Enter Details of {i + 1} Student");
                 students[i] = new Student();
@@ -33,7 +33,7 @@
             }
             Console.WriteLine("Company is " + Student.company);
             Student.DisplayBatch();
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 3; i++)
             {
                 Console.WriteLine($"Details of {i + 1} Student are");
                 students[i].DisplayDetails();
