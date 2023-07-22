@@ -10,6 +10,20 @@ namespace OOPsDemo
     {
         static void Main()
         {
+            int[] num = new int[] { 1, 2, 3, 4, 5, 6, };
+            // for , foreach
+            for(int i=0;i<num.Length; i++)
+            {
+                num[i] = 10;
+                Console.WriteLine(num[i]);
+            }
+            foreach (int i in num)
+            {
+                //i = 10;
+                Console.WriteLine(i);
+            }
+
+
             string sen = "This is a new.Book";
             Console.WriteLine(sen.Length);
             Console.WriteLine(sen.StartsWith('T'));
@@ -39,7 +53,11 @@ namespace OOPsDemo
             Console.WriteLine(strings.Length);
             Console.WriteLine(sen.Substring(0,1));
             Console.WriteLine(sen.Substring(sen.Length, -9));
-
+            char[] chars = sen.ToCharArray();
+            foreach(char c in chars)
+            {
+                if (Char.IsLetter(c)) { }
+            }
         }
     }
 }
