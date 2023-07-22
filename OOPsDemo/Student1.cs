@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOPsDemo
+namespace OOPsDemo1
 {
     internal class  Student
     {
